@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
+    overflow-x: hidden;
+    overflow-y: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/jhondl-education-3670453.jpg);
     background-size: cover;
     background-position: center top;
@@ -60,24 +63,94 @@ section.hero {
     display: flex;
     text-align: center;
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: 60vh;
     align-items: center;
+    justify-content: center;
     color: rgb(255, 255, 255);
 
 
 }
 
 section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    background-color: yellow;
-    height: calc(100vh - 70px);
+
+
 
 }
 
-section.ritgh {
+section.right {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50%;
-    height: calc(100vh - 70px);
+
+    padding: 20px;
+
+}
+
+section.hero h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+section.hero p {
+    font-size: 20px;
+}
+
+section.hero img {
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 60px;
+}
+
+section.demo {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 70vh;
+}
+
+
+
+section.demo h1 {
+    font-size: 50px;
+}
+
+section.demo .organização {
+    display: flex;
+    margin-top: 100px;
+    font-size: 20px;
+
+}
+
+section.demo .left-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+}
+
+section.demo .right-demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding-right: 10px;
+
+}
+
+section.demo .left-demo img {
+    width: 550px;
+
+    border-radius: 20px;
+
 }
