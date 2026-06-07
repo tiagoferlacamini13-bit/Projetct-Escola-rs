@@ -1,19 +1,67 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/jhondl-education-3670453.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+
+}
+
 header {
     display: flex;
     width: 100vw;
-    height: 50px;
-    background-color: white;
-    color: black;
-    justify-content: space-evenly;
+    height: 70px;
+
+    color: rgb(255, 255, 255);
+    justify-content: center;
     align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+nav {
+    display: flex;
+    width: 60%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
 
 header ul {
     display: flex;
     list-style: none;
     gap: 20px;
     font-size: 20px;
+}
+
+header a {
+    transition: 0.5s ease;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+    font-size: 30px;
+}
+
+section.hero {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+
+    color: rgb(255, 255, 255);
+    justify-content: center;
+
 }
