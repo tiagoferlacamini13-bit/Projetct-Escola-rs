@@ -58,10 +58,26 @@ header a:hover {
 
 section.hero {
     display: flex;
+    text-align: center;
     width: 100vw;
-    height: 60vh;
+    height: calc(100vh - 70px);
     align-items: center;
     color: rgb(255, 255, 255);
-    justify-content: center;
 
+
+}
+
+section .left {
+    width: 50%;
+    background-color: yellow;
+    height: calc(100vh - 70px);
+
+}
+
+section.ritgh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: calc(100vh - 70px);
 }
