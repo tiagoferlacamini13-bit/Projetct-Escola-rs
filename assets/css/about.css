@@ -5,3 +5,8 @@ body{
 p{
     font-size: 25px;
 }
+div.left{
+    width: 600px;
+    height: 200px;
+    text-align: center;
+}
