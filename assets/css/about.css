@@ -1,6 +1,6 @@
 @charset "utf-8";
 body{
-    background-color: rgb(188, 188, 188);
+    background-image: linear-gradient(to left, rgb(0, 63, 76),rgb(0, 132, 209)  , white);
 }
 p{
     font-size: 25px;
