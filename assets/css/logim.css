@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     height: 100vh;
     background-color: #004f4c;
+    color: rgb(1, 213, 51);
 }
 
 form {
@@ -39,10 +40,10 @@ input {
 }
 
 button {
-    height: 40px;
-    padding: 5px;
+    height: 80px;
+    padding: 10px;
 
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 22px;
     cursor: pointer;
 }
