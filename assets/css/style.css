@@ -6,7 +6,33 @@
     padding: 0;
 }
 
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+    /* fundo preto */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    /* barra vermelha */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cc0000;
+    /* vermelho escuro ao passar o mouse */
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow-x: hidden;
     overflow-y: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img/jhondl-education-3670453.jpg);
@@ -93,18 +119,39 @@ section.right {
 }
 
 section.hero h1 {
+    transition: 0.5s;
     font-size: 40px;
     padding-bottom: 20px;
 }
 
+section.hero h1:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 45px;
+}
+
 section.hero p {
     font-size: 20px;
+    transition: 0.5s;
+}
+
+section.hero p:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 22px;
 }
 
 section.hero img {
     width: 600px;
     border-radius: 20px;
     margin-left: 60px;
+    transition: 0.5s ease;
+}
+
+section.hero img:hover {
+    transition: 0.5s ease;
+    width: 650px;
+    border-radius: 20px;
 }
 
 section.demo {
@@ -120,6 +167,13 @@ section.demo {
 
 section.demo h1 {
     font-size: 50px;
+    transition: 0.5s;
+}
+
+section.demo h1:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-size: 55px;
 }
 
 section.demo .organização {
@@ -135,22 +189,70 @@ section.demo .left-demo {
     justify-content: center;
     align-items: center;
     width: 40%;
+    margin: 60px;
 
 }
 
 section.demo .right-demo {
+    transition: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
+    font-size: 24px;
     padding-right: 10px;
 
 }
 
+section.demo .right-demo:hover {
+    font-size: 26px;
+    transition: 0.5s ease;
+}
+
+section.demo .right-demo:hover {
+    cursor: pointer;
+}
+
 section.demo .left-demo img {
     width: 550px;
-
+    transition: 0.5s;
     border-radius: 20px;
 
+}
+
+section.demo .left-demo img:hover {
+    width: 600px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+button {
+    transition: 0.5s ease;
+    font-size: 30px;
+    color: aliceblue;
+    background-color: black;
+    margin: 30px;
+    height: 100px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: black;
+    background-color: aliceblue;
+}
+
+button a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button a:hover {
+    color: black;
 }
