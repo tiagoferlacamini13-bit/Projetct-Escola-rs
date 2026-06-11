@@ -5,8 +5,29 @@ body{
 p{
     font-size: 25px;
 }
-div.left{
-    width: 600px;
-    height: 200px;
-    text-align: center;
+
+div.container{ 
+    width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    
+} 
+div.center{
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+
+}
+div.dev1{
+    border-color: black;
+    border-width: 0.1px;
+    border-style: solid;
+}
+div.dev2{
+    border-color: black;
+    border-width: 0.1px;
+    border-style: solid;
 }
