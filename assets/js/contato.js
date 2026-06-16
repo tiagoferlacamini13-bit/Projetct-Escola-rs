@@ -4,7 +4,14 @@ function pegarDados() {
     let email = document.querySelector("#email").value
     let senha = document.querySelector("#senha").value
     localStorage.setItem('usuario', JSON.stringify({ nome, email, senha }))
-    window.location.href = '/assets/pages/Comfirmation/comfirmation.html';
+
+
+    if (nome != "" && email != "" && senha != "") {
+        alert("Preencha seus dados")
+    }
+    else {
+        window.location.href = '/assets/pages/Comfirmation/comfirmation.html';
+    }
 }
 function soltarDados() {
     const usuario = JSON.parse(localStorage.getItem('usuario'))
