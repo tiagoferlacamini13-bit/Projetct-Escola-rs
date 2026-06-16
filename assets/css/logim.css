@@ -1,49 +1,233 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    color: white;
-    padding: 100px;
-    font-size: 60px;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #004f4c;
-    color: rgb(1, 213, 51);
+    align-items: center;
 }
 
-form {
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    transform: translateY(-2px);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.contact {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact .intro {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+#contactForm {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
-    padding: 20px;
-    width: 50%;
-    border-radius: 10px;
-    height: 50%;
+    gap: 25px;
 }
 
-input {
-    height: 40px;
-    padding: 5px;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-    border-radius: 5px;
+.form-group label {
+    font-weight: bold;
+    color: #333;
     font-size: 16px;
 }
 
-button {
-    height: 80px;
-    padding: 10px;
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
 
-    border-radius: 10px;
-    font-size: 22px;
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    background-color: #f8f9ff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(-1px);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #ff0000;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .contact {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .contact h1 {
+        font-size: 24px;
+    }
+
+    .contact .intro {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    #contactForm {
+        gap: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
 }

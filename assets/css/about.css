@@ -1,38 +1,201 @@
-@charset "utf-8";
-body{
-    background-image: linear-gradient(to left, rgb(0, 63, 76) 2%, rgb(0, 132, 209) 40%, white );
-}
-p{
-    font-size: 25px;
-}
-h1{
-    text-align: center;
-    font-size: 50px;
-}
-    
-    
-div.center{
-    width: 700px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 50px;
+@charset "UTF-8";
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-div.dev1{
-    width: 700px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    gap: 50px;
+
+html {
+    scroll-behavior: smooth;
 }
-div.dev2{
-    width: 700px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+
+body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(135deg, rgba(0, 63, 76, 0.9) 0%, rgba(0, 132, 209, 0.9) 50%, rgba(255, 255, 255, 0.95) 100%);
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
     display: flex;
-    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    transform: translateY(-2px);
+}
+
+main {
+    min-height: calc(100vh - 70px - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.about {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.intro {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.developers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.dev-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-top: 4px solid #ffcc00;
+}
+
+.dev-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.dev-card h2 {
+    font-size: 28px;
+    color: #004f4c;
+    margin-bottom: 10px;
+}
+
+.dev-card .role {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dev-card .description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #ff0000;
+}
+
+footer p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .developers {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .dev-card {
+        padding: 25px;
+    }
+
+    .dev-card h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .about h1 {
+        font-size: 24px;
+    }
+
+    .intro {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .dev-card {
+        padding: 20px;
+    }
+
+    .dev-card h2 {
+        font-size: 18px;
+    }
+
+    .dev-card .description {
+        font-size: 14px;
+    }
 }

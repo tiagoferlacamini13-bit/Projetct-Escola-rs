@@ -1,24 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Mensagem enviada com sucesso!">
+    <title>Confirmação - Projeto Escola</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .confirmation {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .confirmation h1 {
+            color: #28a745;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .confirmation p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .confirmation .success-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .info-item strong {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 480px) {
+            .confirmation {
+                padding: 40px 20px;
+            }
+
+            .confirmation h1 {
+                font-size: 24px;
+            }
+
+            .confirmation p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="confirmation">
+        <div class="success-icon">✓</div>
+        <h1>Mensagem Enviada com Sucesso!</h1>
+        <p>Obrigado por entrar em contato conosco.</p>
+        <p>Responderemos sua mensagem em breve.</p>
 
-    <h2>
-        enviado com sucesso!
-    </h2>
-    <p>apenas comfirmando se seus dados foram enviados com sucesso </p>
-    <h1 id="nome"></h1>
-    <h1 id="email"></h1>
-    <h1 id="senha"></h1>
-    <a href="/index.html">Voltar para a pagina inicial</a>
-    <script src="/assets/js/contato.js"></script>
-    <script>soltarDados()</script>
+        <div class="info">
+            <div class="info-item">
+                <strong>Nome:</strong> <span id="nome">-</span>
+            </div>
+            <div class="info-item">
+                <strong>E-mail:</strong> <span id="email">-</span>
+            </div>
+            <div class="info-item">
+                <strong>Assunto:</strong> <span id="assunto">-</span>
+            </div>
+        </div>
+
+        <a href="../../../index.html" class="btn">Voltar para Página Inicial</a>
+    </div>
+
+    <script src="../../../assets/js/contato.js"></script>
 </body>
 
 </html>

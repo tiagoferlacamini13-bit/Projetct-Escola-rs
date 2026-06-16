@@ -1,61 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Escola - Educação de qualidade com os melhores professores selecionados pela SEDUC">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Projeto escola</title>
+    <title>Projeto Escola - Bem-vindo</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav aria-label="Navegação principal">
             <h1>
-                <a href="/index.html"> BOAS VINDAS</a>
+                <a href="index.html" title="Voltar para página inicial">BOAS VINDAS</a>
             </h1>
             <ul>
-
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="assets/pages/about.html">Sobre-nós</a></li>
-                <li><a href="/assets/pages/logim.html">Fale Conosco</a></li>
+                <li><a href="assets/pages/logim.html">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="left">
+    <section class="hero" aria-label="Seção bem-vindo">
+        <div class="hero__content">
             <h1>Seja bem-vindo ao Projeto Escola</h1>
             <p>
-                aqui, seu filho aprenderá com os melhores professores selecionados pela seduc.<br>
-                caso queira saber mais, acesse a pagina de contato da escola.
+                Aqui, seu filho aprenderá com os melhores professores selecionados pela SEDUC.<br>
+                Caso queira saber mais, acesse a página de contato da escola.
             </p>
         </div>
-        <div class="right">
+        <div class="hero__image">
             <img src="https://imgs.search.brave.com/W5CRB4qsD0zK7qIvlyu87TCsSEOdBa9qHbHMe6ymvFs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTEz/Njk3MTM1My9wdC9m/b3RvL3BpY2stbWUu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PTZZU0tZcFVKTjFJ/bHI2SWc1OTJXTGg5/Y0t4WkhXZmNtcXpD/Nm5kc01Xakk9"
-                alt="escola">
+                alt="Crianças em ambiente escolar">
         </div>
     </section>
 
-    <section class="demo">
-        <h1>Oque fazemos aqui?</h1>
-        <div class="organização">
-            <div class="left-demo">
+    <section class="demo" aria-label="O que fazemos">
+        <h1>O que fazemos aqui?</h1>
+        <div class="demo__container">
+            <div class="demo__image">
                 <img src="https://imgs.search.brave.com/LF6djz7NRQ2wjVKy48UCJLS5lNslFO4v2K-dcIPBBuE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE4/NTQ3MDIxMC9wdC9m/b3RvL3N3ZWV0LWtp/bmRlcmdhcnRlbi1z/dHVkZW50LmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1qWlNE/bFN2Y2hyVjY2RWJh/aXFaYkhNUXpMMXg3/SlR0aTE5aDdiMm0z/MHZrPQ"
-                    alt="escola">
+                    alt="Alunos em sala de aula">
             </div>
-            <div class="right-demo">
+            <div class="demo__text">
                 <p>
-                    Aqui nós fazemos de tudo para que seu filho aprenda e se forme numa boa área. <br>
-                    assim como nós !
+                    Aqui nós fazemos de tudo para que seu filho aprenda e se forme numa boa área,<br>
+                    assim como nós!
                 </p>
             </div>
         </div>
     </section>
 
+    <section class="cta" aria-label="Chamada para ação">
+        <a href="assets/pages/logim.html" class="btn btn--primary">Fale Conosco</a>
+    </section>
 
-
-    <button><a href="assets/pages/logim.html">Fale Conosco</a></button>
+    <footer class="footer">
+        <p>&copy; 2024 Projeto Escola. Todos os direitos reservados.</p>
+        <p>Desenvolvido com dedicação à educação.</p>
+    </footer>
 
 
 

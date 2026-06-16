@@ -1,37 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/logim.css">
-    <title>Projeto escola-logim</title>
+    <meta name="description" content="Fale conosco - Deixe sua mensagem e entre em contato com a Projeto Escola">
+    <link rel="stylesheet" href="../css/logim.css">
+    <title>Fale Conosco - Projeto Escola</title>
 </head>
 
 <body>
-    <h1>Fale Conosco</h1>
+    <header>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="about.html">Sobre-nós</a></li>
+                <li><a href="logim.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <form>
-        <label for="email">email</label>
-        <input required autofocus placeholder="email" type="email" name="email" id="email" value="">
+    <main>
+        <section class="contact">
+            <h1>Fale Conosco</h1>
+            <p class="intro">Deixe sua mensagem e entraremos em contato em breve.</p>
 
-        <label for="senha">senha</label>
-        <input required autofocus placeholder="senha" type="password" name="senha" id="senha" value="">
+            <form id="contactForm" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input 
+                        required 
+                        autofocus 
+                        placeholder="Seu nome" 
+                        type="text" 
+                        name="nome" 
+                        id="nome" 
+                        maxlength="100">
+                </div>
 
-        <label for="rpsenha">repita a senha</label>
-        <input required autofocus placeholder="Repita a senha" type="password" name="rpsenha" id="rpsenha" value="">
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input 
+                        required 
+                        placeholder="seu.email@example.com" 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        maxlength="100">
+                </div>
 
-        <label for="nome">nome</label>
-        <input required autofocus placeholder="nome" type="text" name="nome" id="nome" value="">
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input 
+                        placeholder="(11) 99999-9999" 
+                        type="tel" 
+                        name="telefone" 
+                        id="telefone">
+                </div>
 
+                <div class="form-group">
+                    <label for="assunto">Assunto *</label>
+                    <input 
+                        required 
+                        placeholder="Assunto da sua mensagem" 
+                        type="text" 
+                        name="assunto" 
+                        id="assunto" 
+                        maxlength="100">
+                </div>
 
-        <button onclick="pegarDados()" type="submit">enviar</button>
-    </form>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem *</label>
+                    <textarea 
+                        required 
+                        placeholder="Sua mensagem..." 
+                        name="mensagem" 
+                        id="mensagem" 
+                        rows="6" 
+                        maxlength="500"></textarea>
+                </div>
 
+                <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <p>&copy; 2024 Projeto Escola. Todos os direitos reservados.</p>
+    </footer>
 
-
-    <script src="/assets/js/contato.js"></script>
+    <script src="../../assets/js/contato.js"></script>
 </body>
 
 </html>
