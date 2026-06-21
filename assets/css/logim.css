@@ -47,3 +47,7 @@ button {
     font-size: 22px;
     cursor: pointer;
 }
+div {   
+    width: 300px;
+    height: 300px;
+}
