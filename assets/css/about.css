@@ -137,6 +137,10 @@ footer p {
     font-size: 14px;
     opacity: 0.8;
 }
+div {
+    text-align: center;
+    margin: 20px;
+}
 
 @media (max-width: 768px) {
     .about h1 {
